@@ -10,5 +10,5 @@ vastausg = ((leivi + naula + luoti) - int(vastauskg)) * 1000
 
 
 print("Massa nykymittojen mukaan: ")
-print(str(int(vastauskg)) + " kilogrammaa ja " + str(vastausg) + " grammaa.")
+print(f"{int(vastauskg)} kilogrammaa ja {vastausg:6.2f} grammaa.")
 
