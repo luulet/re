@@ -9,5 +9,4 @@ if vuosi % 4 == 0:
     else:
         print("Vuosi on karkausvuosi.")
 else:
-    print("Vuosi ei ole karkausvuosi")
-
+    print("Vuosi ei ole karkausvuosi.")
