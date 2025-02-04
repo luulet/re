@@ -1,4 +1,11 @@
-print("test")
-salis = input("Anna salasana: ")
-print("salis")
+def inventaario(tavarat):
+    print("Sinulla on seuraavat tavarat:")
+    for t in tavarat:
+        print ("- " + t)
+    return
+
+reppu = ["Vesipullo", "Kartta", "Kompassi"]
+inventaario(reppu)
+reppu.append("Linkkuveitsi")
+inventaario(reppu)
 
