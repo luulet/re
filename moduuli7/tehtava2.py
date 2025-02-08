@@ -21,7 +21,8 @@ def main():
         if user_input == (""):
                 hit = False
 
-    print(nimet)
+    for nimi in nimet:
+        print(nimi, end=", ")
 
 main()
 

@@ -1,20 +1,28 @@
 def main():
 
-    hit = True
-    airports = {}
-    airports = set(#nimet)
-    while hit:
-        print("Haluatko syöttää uuden lentoaseman (1), hakea lentoaseman tiedot (2) tai lopettaa (Enter)")
-        option_input = input(" > ")
-        if option_input == "1":
 
-        if option_input == (""):
-            hit = False
-        print("Icao: ")
-        icao_input = input(" > ")
+    airports = {"00AA": "Aero B Ranch Airport"}
+    while True:
+        print("Haluatko syöttää uuden lentoaseman (1), hakea lentoaseman tiedot (2) tai lopettaa [Enter]")
+        option = input(" > ")
+        if option == "1":
+            print("Anna lentokentän ICAO-koodi")
+            icao = input(" > ")
+            print("Anna lentokentän nimi")
+            nimi = input(" > ")
+            airports.update({icao: nimi})
+        elif option == "2":
+            print("Anna lentokentän ICAO-koodi")
+            icao_search = input(" > ")
+            if icao_search in airports:
+                print(airports[icao_search])
+            else: print("ICAO koodia ei löydetty.")
+        elif option == (""):
+            print("Näkemiin.")
+            break
+        else:
+            print("Valinta ei '1', '2' tai [enter].")
 
-        print("Nimi: ")
-        nimi_input = input (" > ")
 
 
 
